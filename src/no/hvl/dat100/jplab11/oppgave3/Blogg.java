@@ -64,8 +64,8 @@ public class Blogg {
 
 	public String toString() {
 		String teksten = "" + nesteledig + "\n";
-		for (Innlegg i : innleggtabell) {
-			teksten += i.toString();
+		for (int i = 0; i < nesteledig; i++) {
+			teksten += innleggtabell[i].toString();
 		}
 		return teksten;
 	}
